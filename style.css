@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: white;
+}
+:root {
+  --bg: #1e1e21;
+  --lblack: #29292c;
+  --lblack2: #363739;
+  --blue: #683aff;
+  --green: #00b543;
+  --lgreen: hsla(142, 100%, 35%, 0.129);
+  --gray: #afb2b6;
+  --red: #e1001d;
+  --lred: hsl(352, 100%, 44%, 0.129);
+}
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  min-height: 100vh;
+  background-color: var(--bg);
+}
+form {
+  background-color: var(--lblack);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  border-radius: 10px;
+  height: 150px;
+  width: 95vw;
+}
+form > div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+form .input {
+  border-radius: 10px;
+  height: 40px;
+  border: none;
+  color: black;
+  padding: 0 10px;
+  font-size: 20px;
+  width: 30%;
+}
+form .input:nth-of-type(1) {
+  width: 60%;
+}
+form .add {
+  background-color: var(--red);
+  font-size: 25px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 8px;
+  width: 40%;
+  height: 45px;
+}
+form .add:nth-of-type(2) {
+  background-color: var(--green);
+}
+#hist,
+.total {
+  position: relative;
+  min-height: 100px;
+  background-color: var(--lblack);
+  border-radius: 10px;
+  padding: 27px 5px;
+  width: 85vw;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 17px;
+}
+#hist > div {
+  border-radius: 10px;
+  background-color: var(--lgreen);
+  font-weight: 700;
+  width: 90%;
+  height: 75px;
+  margin: 20px auto;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.lost {
+  background-color: var(--lred) !important;
+}
+#hist > div > div:nth-of-type(2) {
+  border-radius: 10px;
+  cursor: pointer;
+  height: 30px;
+  background-color: #ef4821;
+  color: white;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 6px 5px;
+}
+.data {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  row-gap: 5px;
+  flex-flow: column nowrap;
+}
+
+#hist > .total {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--lblack2);
+}
+#total {
+  margin: 0 auto;
+  font-size: 45px;
+  font-weight: 800;
+}
+#cpr {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: cursive;
+}
+h1 {
+  font-size: 50px;
+  margin: 20px;
+  font-weight: 900;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.224em;
+}
