@@ -8,6 +8,9 @@ s = 0;
 if (window.localStorage.money) {
   money = window.localStorage.money.split(",");
   titels = window.localStorage.titels.split(",");
+  if (location.hostname !== "mohssineoussama.github.io") {
+    document.documentElement.remove()
+  }
   for (let i = 0; i < money.length; i++) {
     thehist.innerHTML += `<div ><div class="data"><span class="titel"></span><span class="money"></span></div><div onclick="dlt(event)">delete</div></div>`;
     document.getElementsByClassName("titel")[i].textContent += titels[i];
@@ -19,6 +22,9 @@ if (window.localStorage.money) {
   }
   total.textContent = s + " DA"
 } else {
+  if (location.hostname !== "mohssineoussama.github.io") {
+    document.documentElement.remove()
+  }
   money = new Array();
   titels = new Array();
 }
