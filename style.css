@@ -147,7 +147,7 @@ h1 {
   padding-left: 5%;
   font-size: 15px;
   cursor: pointer;
-  display: none;
+  display: block;
 }
 #hist > div .date {
   position: absolute;
