@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Economy</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-dist.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -18,12 +18,12 @@
     <form>
         <div class="enter">
             <input required type="text" maxlength="15" placeholder="For/from What ?" class="input title0">
-            <input required type="number" placeholder="_DA" class="input money0">
+            <input translate="no" required type="number" placeholder="_DA" class="input money0">
         </div>
         <div class="btns">
 
-            <input onclick="cash('out')" type="submit" value="Cash-Out" class="add">
-            <input onclick="cash('in')" type="submit" value="Cash-In" class="add">
+            <input onclick="cash('out')" type="submit" value="Cash-Out" class="add Cash-Out ">
+            <input onclick="cash('in')" type="submit" value="Cash-In" class="add Cash-In">
         </div>
     </form>
     <div id="hist">
