@@ -1,3 +1,10 @@
+if (localStorage.vrf !== 'true') {
+  localStorage.money = JSON.stringify(localStorage.money.split(","))
+  localStorage.titels = JSON.stringify(localStorage.titels.split(","))
+  localStorage.dates = JSON.stringify(localStorage.dates.split(","))
+}
+localStorage.setItem("vrf", true)
+
 thehist = document.getElementById("hist");
 total = document.getElementById("total");
 CashOut = document.getElementsByClassName("add")[0];
@@ -73,9 +80,3 @@ function cash(t) {
     addDate()
   }
 }
-if (localStorage.vrf !== 'true') {
-  localStorage.money = JSON.stringify(localStorage.money.split(","))
-  localStorage.titels = JSON.stringify(localStorage.titels.split(","))
-  localStorage.dates = JSON.stringify(localStorage.dates.split(","))
-}
-localStorage.setItem("vrf", true)
